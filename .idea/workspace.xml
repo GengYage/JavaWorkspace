@@ -2,15 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/henu/InsertSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/henu/SelectSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/henu/ShellSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/henu/InsertSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/henu/InsertSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,6 +69,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -73,7 +89,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunManager" selected="Application.InsertSort">
+  <component name="RunManager" selected="Application.ShellSort">
     <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="henu.InsertSort" />
       <module name="algorithm" />
@@ -100,8 +116,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShellSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="henu.ShellSort" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="henu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShellSort" />
         <item itemvalue="Application.InsertSort" />
         <item itemvalue="Application.SelectSort" />
       </list>
@@ -112,7 +142,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -134,7 +169,9 @@
       <updated>1578025840880</updated>
       <workItem from="1578025849473" duration="121000" />
       <workItem from="1578635469172" duration="1031000" />
-      <workItem from="1578636524020" duration="7207000" />
+      <workItem from="1578636524020" duration="8234000" />
+      <workItem from="1578717006001" duration="611000" />
+      <workItem from="1578723989634" duration="2074000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1578638430976</created>
@@ -143,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578638430976</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="更新到插入排序">
+      <created>1578648009077</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578648009077</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +195,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化项目" />
+    <MESSAGE value="更新到插入排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新到插入排序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="576" y="210" key="#Project_Structure" timestamp="1578025960227">
@@ -162,42 +207,46 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="894" y="301" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578644784938" />
-    <state x="500" y="57" key="CommitChangelistDialog2" timestamp="1578638430793">
+    <state x="1039" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578725045275">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="500" y="57" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578638430793" />
+    <state x="1039" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578725045275" />
+    <state x="500" y="57" key="CommitChangelistDialog2" timestamp="1578648008791">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="500" y="57" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578648008791" />
     <state x="1008" y="392" key="FileChooserDialogImpl" timestamp="1578638159051">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1008" y="392" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1578638159051" />
-    <state width="908" height="263" key="GridCell.Tab.0.bottom" timestamp="1578647844744">
+    <state width="908" height="263" key="GridCell.Tab.0.bottom" timestamp="1578726061566">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="263" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1578647844744" />
-    <state width="908" height="263" key="GridCell.Tab.0.center" timestamp="1578647844744">
+    <state width="908" height="263" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1578726061566" />
+    <state width="908" height="263" key="GridCell.Tab.0.center" timestamp="1578726061565">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="263" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1578647844744" />
-    <state width="908" height="263" key="GridCell.Tab.0.left" timestamp="1578647844744">
+    <state width="908" height="263" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1578726061565" />
+    <state width="908" height="263" key="GridCell.Tab.0.left" timestamp="1578726061565">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="263" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1578647844744" />
-    <state width="908" height="263" key="GridCell.Tab.0.right" timestamp="1578647844744">
+    <state width="908" height="263" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1578726061565" />
+    <state width="908" height="263" key="GridCell.Tab.0.right" timestamp="1578726061565">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="263" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1578647844744" />
+    <state width="908" height="263" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1578726061565" />
     <state x="543" y="177" width="1377" height="733" key="SettingsEditor" timestamp="1578644821233">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="543" y="177" width="1377" height="733" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1578644821233" />
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578638776563">
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578648288668">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578638776563" />
-    <state x="279" y="323" key="com.intellij.ide.util.TipDialog" timestamp="1578636527985">
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578648288668" />
+    <state x="395" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1578724020064">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="279" y="323" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578636527985" />
+    <state x="395" y="334" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578724020064" />
     <state x="1130" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578647959982">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -206,5 +255,9 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1103" y="253" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1578646923695" />
+    <state x="1052" y="260" width="774" height="678" key="search.everywhere.popup" timestamp="1578724379868">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="1052" y="260" width="774" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1578724379868" />
   </component>
 </project>
