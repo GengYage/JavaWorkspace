@@ -1,4 +1,4 @@
-package henu;
+package henu.sort;
 
 import java.util.Arrays;
 

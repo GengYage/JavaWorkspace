@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/henu/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/henu/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/henu/InsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/henu/sort/InsertSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/henu/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/henu/sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/henu/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/henu/sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/henu/SelectSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/henu/sort/SelectSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/henu/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/henu/sort/ShellSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,11 +92,11 @@
   </component>
   <component name="RunManager" selected="Application.MergeSort">
     <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.InsertSort" />
+      <option name="MAIN_CLASS_NAME" value="henu.search.sort.InsertSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="henu.*" />
+          <option name="PATTERN" value="henu.search.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,11 +105,11 @@
       </method>
     </configuration>
     <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.MergeSort" />
+      <option name="MAIN_CLASS_NAME" value="henu.search.sort.MergeSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="henu.*" />
+          <option name="PATTERN" value="henu.search.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +118,11 @@
       </method>
     </configuration>
     <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.QuickSort" />
+      <option name="MAIN_CLASS_NAME" value="henu.search.sort.QuickSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="henu.*" />
+          <option name="PATTERN" value="henu.search.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +131,11 @@
       </method>
     </configuration>
     <configuration name="SelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.SelectSort" />
+      <option name="MAIN_CLASS_NAME" value="henu.search.sort.SelectSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="henu.*" />
+          <option name="PATTERN" value="henu.search.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +144,11 @@
       </method>
     </configuration>
     <configuration name="ShellSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.ShellSort" />
+      <option name="MAIN_CLASS_NAME" value="henu.search.sort.ShellSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="henu.*" />
+          <option name="PATTERN" value="henu.search.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,7 +196,7 @@
       <workItem from="1578636524020" duration="8234000" />
       <workItem from="1578717006001" duration="611000" />
       <workItem from="1578723989634" duration="3179000" />
-      <workItem from="1578727549022" duration="6886000" />
+      <workItem from="1578727549022" duration="10164000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1578638430976</created>
@@ -216,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578726120447</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新到归并排序">
+      <created>1578735422753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578735422753</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +236,8 @@
     <MESSAGE value="初始化项目" />
     <MESSAGE value="更新到插入排序" />
     <MESSAGE value="更新到希尔排序" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新到希尔排序" />
+    <MESSAGE value="更新到归并排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新到归并排序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="576" y="210" key="#Project_Structure" timestamp="1578025960227">
@@ -241,10 +252,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1039" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578725045275" />
-    <state x="500" y="57" key="CommitChangelistDialog2" timestamp="1578726120276">
+    <state x="500" y="57" key="CommitChangelistDialog2" timestamp="1578740134816">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="500" y="57" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578726120276" />
+    <state x="500" y="57" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578740134816" />
     <state x="1008" y="392" key="FileChooserDialogImpl" timestamp="1578638159051">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -269,18 +280,18 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="543" y="177" width="1377" height="733" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1578644821233" />
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578648288668">
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578735728350">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578648288668" />
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578735728350" />
     <state x="343" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1578727549207">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="343" y="281" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578727549207" />
-    <state x="1130" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578647959982">
+    <state x="1130" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578740159895">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="1130" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578647959982" />
+    <state x="1130" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578740159895" />
     <state x="1103" y="253" key="run.anything.popup" timestamp="1578646923695">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
