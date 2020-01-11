@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/henu/ShellSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/henu/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/henu/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/henu/InsertSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/henu/InsertSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,9 +87,35 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunManager" selected="Application.ShellSort">
+  <component name="RunManager" selected="Application.MergeSort">
     <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="henu.InsertSort" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="henu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="henu.MergeSort" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="henu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="henu.QuickSort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -131,6 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.ShellSort" />
         <item itemvalue="Application.InsertSort" />
         <item itemvalue="Application.SelectSort" />
@@ -142,12 +168,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -171,7 +192,8 @@
       <workItem from="1578635469172" duration="1031000" />
       <workItem from="1578636524020" duration="8234000" />
       <workItem from="1578717006001" duration="611000" />
-      <workItem from="1578723989634" duration="2074000" />
+      <workItem from="1578723989634" duration="3179000" />
+      <workItem from="1578727549022" duration="6886000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1578638430976</created>
@@ -187,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578648009077</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新到希尔排序">
+      <created>1578726120447</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578726120447</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +225,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
     <MESSAGE value="更新到插入排序" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新到插入排序" />
+    <MESSAGE value="更新到希尔排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新到希尔排序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="576" y="210" key="#Project_Structure" timestamp="1578025960227">
@@ -211,30 +241,30 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1039" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578725045275" />
-    <state x="500" y="57" key="CommitChangelistDialog2" timestamp="1578648008791">
+    <state x="500" y="57" key="CommitChangelistDialog2" timestamp="1578726120276">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="500" y="57" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578648008791" />
+    <state x="500" y="57" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578726120276" />
     <state x="1008" y="392" key="FileChooserDialogImpl" timestamp="1578638159051">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1008" y="392" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1578638159051" />
-    <state width="908" height="263" key="GridCell.Tab.0.bottom" timestamp="1578726061566">
+    <state width="908" height="300" key="GridCell.Tab.0.bottom" timestamp="1578735210743">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="263" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1578726061566" />
-    <state width="908" height="263" key="GridCell.Tab.0.center" timestamp="1578726061565">
+    <state width="908" height="300" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1578735210743" />
+    <state width="908" height="300" key="GridCell.Tab.0.center" timestamp="1578735210742">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="263" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1578726061565" />
-    <state width="908" height="263" key="GridCell.Tab.0.left" timestamp="1578726061565">
+    <state width="908" height="300" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1578735210742" />
+    <state width="908" height="300" key="GridCell.Tab.0.left" timestamp="1578735210742">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="263" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1578726061565" />
-    <state width="908" height="263" key="GridCell.Tab.0.right" timestamp="1578726061565">
+    <state width="908" height="300" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1578735210742" />
+    <state width="908" height="300" key="GridCell.Tab.0.right" timestamp="1578735210742">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="263" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1578726061565" />
+    <state width="908" height="300" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1578735210742" />
     <state x="543" y="177" width="1377" height="733" key="SettingsEditor" timestamp="1578644821233">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -243,10 +273,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578648288668" />
-    <state x="395" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1578724020064">
+    <state x="343" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1578727549207">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="395" y="334" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578724020064" />
+    <state x="343" y="281" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578727549207" />
     <state x="1130" y="466" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578647959982">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
