@@ -15,6 +15,7 @@ public class BinarySearch {
      *一次仅能查找一个
      */
     public static int binarySearchI(int[] arr, int left, int right, int findVal) {
+        System.out.println("我被调用了,我是二分");
         if(left > right) {
             return -1;
         }
