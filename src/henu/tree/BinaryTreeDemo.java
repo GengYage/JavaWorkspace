@@ -13,19 +13,21 @@ public class BinaryTreeDemo {
         node3.setRight(node4);
         node3.setLeft(node5);
         binaryTree.setRoot(root);
-//        System.out.println("前序遍历");
-//        binaryTree.perOrder();
+        System.out.println("前序遍历");
+        binaryTree.perOrder();
 //        System.out.println("中序遍历");
 //        binaryTree.infixOrder();
 //        System.out.println("后序遍历");
 //        binaryTree.postOrder();
-        System.out.println("前序查找 ");
-        binaryTree.preOrderSearch(5);
-        System.out.println("中序查找 ");
-        binaryTree.infixOrderSearch(5);
-        System.out.println("后序查找 ");
-        binaryTree.postOrderSearch(5);
-
+//        System.out.println("前序查找 ");
+//        binaryTree.preOrderSearch(5);
+//        System.out.println("中序查找 ");
+//        binaryTree.infixOrderSearch(5);
+//        System.out.println("后序查找 ");
+//        binaryTree.postOrderSearch(5);
+        binaryTree.delete(2);
+        System.out.println("前序遍历");
+        binaryTree.perOrder();
 
     }
 }
@@ -89,6 +91,18 @@ class BinaryTree {
             System.out.println("当前树为空");
         }
         System.out.println(resNode);
+    }
+    //删除
+    public void delete(int id) {
+        if(this.root!=null) {
+            if(root.getId()==id) {
+                this.root = null;
+            } else {
+                this.root.delete(id);
+            }
+        } else {
+            System.out.println("树空，无法删除");
+        }
     }
 }
 
@@ -231,5 +245,29 @@ class Node {
             return this;
         }
         return null;
+    }
+    /*递归删除
+     *是叶子节点删除节点
+     * 不是叶子节点，就删除该子树
+     */
+    public void delete(int id) {
+        //左子节点
+        if(this.left!=null && this.left.id==id) {
+            this.left = null;
+            return;
+        }
+        //右子节点
+        if(this.right!=null && this.right.id==id) {
+            this.right = null;
+            return;
+        }
+        //向左子树递归删除
+        if(this.left != null) {
+            this.left.delete(id);
+        }
+        //右子树递归删除
+        if(this.right!=null) {
+            this.right.delete(id);
+        }
     }
 }
