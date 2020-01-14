@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/henu/bst/BinarySortTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/henu/huffmanTree/HuffmanCode/HuffmanCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/henu/huffmanTree/HuffmanCode/HuffmanCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/henu/huffmanTree/HuffmanCode/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/henu/huffmanTree/HuffmanCode/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/henu/huffmanTree/HuffmanCode/HuffmanCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/henu/huffmanTree/HuffmanCode/HuffmanCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,13 +94,13 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager" selected="Application.HuffmanCode">
-    <configuration name="ArrBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.tree.ArrBinaryTreeDemo" />
+  <component name="RunManager" selected="Application.BinarySortTreeDemo">
+    <configuration name="BinarySortTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="henu.bst.BinarySortTreeDemo" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="henu.tree.*" />
+          <option name="PATTERN" value="henu.bst.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySortTreeDemo" />
         <item itemvalue="Application.HuffmanCode" />
         <item itemvalue="Application.HuffmanTree" />
         <item itemvalue="Application.HeapSort" />
         <item itemvalue="Application.ThreadedBinaryTreeDemo (1)" />
-        <item itemvalue="Application.ArrBinaryTreeDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +212,8 @@
       <workItem from="1578908838843" duration="749000" />
       <workItem from="1578913320766" duration="7580000" />
       <workItem from="1578975817254" duration="992000" />
-      <workItem from="1578977145247" duration="13235000" />
+      <workItem from="1578977145247" duration="16033000" />
+      <workItem from="1578998530516" duration="5893000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1578638430976</created>
@@ -321,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578988218865</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="更新huffman文件压缩，解压">
+      <created>1578990433163</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1578990433163</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +349,8 @@
     <MESSAGE value="更新至堆排序" />
     <MESSAGE value="更新huffman编码" />
     <MESSAGE value="更新huffman解码" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新huffman解码" />
+    <MESSAGE value="更新huffman文件压缩，解压" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新huffman文件压缩，解压" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1039" y="214" key="#Auto_Import" timestamp="1578977274232">
@@ -362,38 +369,38 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1039" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578725045275" />
-    <state x="1186" y="231" width="734" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1578977307609">
+    <state x="1186" y="231" width="734" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1578992564576">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="1186" y="231" width="734" height="565" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1578977307609" />
+    <state x="1186" y="231" width="734" height="565" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1578992564576" />
     <state x="1152" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578823646635">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1152" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.28.1920.1052@0.28.1920.1052" timestamp="1578823646635" />
-    <state x="289" y="43" key="CommitChangelistDialog2" timestamp="1578988218656">
+    <state x="289" y="43" key="CommitChangelistDialog2" timestamp="1578990433078">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="289" y="43" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578988218656" />
+    <state x="289" y="43" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578990433078" />
     <state x="1008" y="392" key="FileChooserDialogImpl" timestamp="1578638159051">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1008" y="392" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1578638159051" />
-    <state width="908" height="345" key="GridCell.Tab.0.bottom" timestamp="1578990391192">
+    <state width="908" height="421" key="GridCell.Tab.0.bottom" timestamp="1579006372586">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="345" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1578990391192" />
-    <state width="908" height="345" key="GridCell.Tab.0.center" timestamp="1578990391190">
+    <state width="908" height="421" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579006372586" />
+    <state width="908" height="421" key="GridCell.Tab.0.center" timestamp="1579006372586">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="345" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1578990391190" />
-    <state width="908" height="345" key="GridCell.Tab.0.left" timestamp="1578990391189">
+    <state width="908" height="421" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579006372586" />
+    <state width="908" height="421" key="GridCell.Tab.0.left" timestamp="1579006372586">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="345" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1578990391189" />
-    <state width="908" height="345" key="GridCell.Tab.0.right" timestamp="1578990391191">
+    <state width="908" height="421" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579006372586" />
+    <state width="908" height="421" key="GridCell.Tab.0.right" timestamp="1579006372586">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="345" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1578990391191" />
+    <state width="908" height="421" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579006372586" />
     <state width="900" height="328" key="GridCell.Tab.1.bottom" timestamp="1578897176502">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -418,10 +425,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="387" y="89" width="1377" height="733" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1578917021422" />
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578917299076">
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578990449560">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578917299076" />
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578990449560" />
     <state x="343" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1578882907573">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
