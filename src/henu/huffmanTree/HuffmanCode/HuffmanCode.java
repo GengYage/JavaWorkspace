@@ -1,5 +1,6 @@
 package henu.huffmanTree.HuffmanCode;
 
+import java.io.*;
 import java.util.*;
 
 public class HuffmanCode {
@@ -137,8 +138,8 @@ public class HuffmanCode {
             temp |= 256; //按位或[256 => 1 0000 0000] | [1 => 0000 0001] = [1 0000 0000 0000]
         }
         String string = Integer.toBinaryString(temp);
-        if(flag) {
-            return string.substring(string.length()-8);
+        if (flag||temp<0) {
+            return string.substring(string.length() - 8);
         } else {
             return string;
         }
@@ -189,6 +190,87 @@ public class HuffmanCode {
         return bt;
     }
 
+    /**
+     * 文件压缩
+     * @param srcFile 源文件路径
+     * @param dstFile 压缩后路径
+     */
+    public static void zipFile(String srcFile, String dstFile) {
+        FileInputStream is = null;
+        FileOutputStream os = null;
+        ObjectOutputStream oos = null;
+        try{
+            is = new FileInputStream(srcFile);
+            byte[] b = new byte[is.available()];
+            is.read(b);
+            //压缩
+            byte[] huffmanBytes = huffmanZip(b);
+            //创建文件输出流
+            os = new FileOutputStream(dstFile);
+            //创建和文件关联的ObjectOutputStream
+            oos = new ObjectOutputStream(os);
+            //将huffman编码后的字节写入文件
+            oos.writeObject(huffmanBytes);
+            //对象流写入huffman编码，解压时方便
+            oos.writeObject(huffmanCodes);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                assert is != null;
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                assert oos != null;
+                oos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                os.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    //文件解压
+    public static void unzipFile(String srcFile,String dstFile) {
+        InputStream is = null;
+        ObjectInputStream ois = null;
+        FileOutputStream os = null;
+        try {
+            is = new FileInputStream(srcFile);
+            ois = new ObjectInputStream(is);
+            //读取byte,和编码表
+            byte[] huffmanByte = (byte[])ois.readObject();
+            Map<Byte,String> map = (Map<Byte,String>)ois.readObject();
+            byte[] decode = decode(map, huffmanByte);
+            os = new FileOutputStream(dstFile);
+            os.write(decode);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                assert os != null;
+                os.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                ois.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     public static void main(String[] args) {
         String content = "i like like like java do you like a java";
         byte[] contentByte = content.getBytes();
@@ -198,6 +280,13 @@ public class HuffmanCode {
         byte[] decode = decode(huffmanCodes, huffmanCodeBytes);
         System.out.println("解码后"+Arrays.toString(decode));
         System.out.println("解码后字符串"+new String(decode));
+        //测试压缩文件
+//        String srcFile = "";
+//        String dstFile = "";
+//        zipFile(srcFile,dstFile);
+//        System.out.println("压缩成功");
+//        unzipFile(dstFile,"");
+//        System.out.println("解压成功");
     }
 }
 
