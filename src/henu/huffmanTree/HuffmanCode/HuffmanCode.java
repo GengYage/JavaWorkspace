@@ -22,6 +22,7 @@ public class HuffmanCode {
         //根据生成的huffmanCodes压缩
         return encoded(bytes, huffmanCodes);
     }
+
     private static List<Node> getNodes(byte[] bytes) {
         ArrayList<Node> nodes = new ArrayList<Node>();
         //遍历存储每一个byte出现的次数
@@ -63,7 +64,6 @@ public class HuffmanCode {
      *生成huffmanCode
      * StringBuilder 存储路径
      */
-
     //为了调用方便重载此方法
     private static Map<Byte,String> getCodes(Node root) {
         if(root == null) {
@@ -124,13 +124,80 @@ public class HuffmanCode {
         }
         return huffmanCodeBytes;
     }
+    /**
+     * 将一个byte转换成二进制
+     * @param flag 标识是否需要补齐高位，true 需要，false不需要
+     * @param b 传入的byte
+     * @return 该byte的二进制补码
+     */
+    private static String byteToBit(boolean flag, byte b) {
+        int temp = b; //byte 转int
+        //如果是正数需要补高位
+        if(flag) {
+            temp |= 256; //按位或[256 => 1 0000 0000] | [1 => 0000 0001] = [1 0000 0000 0000]
+        }
+        String string = Integer.toBinaryString(temp);
+        if(flag) {
+            return string.substring(string.length()-8);
+        } else {
+            return string;
+        }
+    }
+    //解码
 
+    /**
+     * huffman解码
+     * @param huffmanCodes huffman编码表
+     * @param huffmanBytes 经过哈夫曼编码的字节数组
+     * @return 解码后的字节
+     */
+    private static byte[] decode(Map<Byte,String> huffmanCodes, byte[] huffmanBytes) {
+        StringBuilder stringBuffer = new StringBuilder();
+        for (int i=0;i<huffmanBytes.length;i++) {
+            boolean flag = (i==huffmanBytes.length-1);
+            stringBuffer.append(byteToBit(!flag,huffmanBytes[i]));
+        }
+        //把字符串安装huffmanCode进行解码
+        Map<String ,Byte> map = new HashMap<String ,Byte>();
+        //解码表
+        for (Map.Entry<Byte,String > entry : huffmanCodes.entrySet()) {
+            map.put(entry.getValue(),entry.getKey());
+        }
+        //创建集合存byte
+        List<Byte> list = new ArrayList<Byte>();
+        for (int i=0;i<stringBuffer.length();) {
+            int count = 1;
+            boolean flag = true;
+            Byte b = null;
+            while (flag) {
+                String key =  stringBuffer.substring(i,i+count);
+                b = map.get(key);
+                if(b==null) {
+                    count++;
+                } else {
+                    flag = false;
+                }
+            }
+            list.add(b);
+            i += count;
+        }
+        //list --> byte[]
+        byte[] bt = new byte[list.size()];
+        for (int i=0;i<bt.length;i++) {
+            bt[i] = list.get(i);
+        }
+        return bt;
+    }
 
     public static void main(String[] args) {
         String content = "i like like like java do you like a java";
         byte[] contentByte = content.getBytes();
         byte[] huffmanCodeBytes = huffmanZip(contentByte);
-        System.out.println(Arrays.toString(huffmanCodeBytes));
+        System.out.println("编码后"+Arrays.toString(huffmanCodeBytes));
+
+        byte[] decode = decode(huffmanCodes, huffmanCodeBytes);
+        System.out.println("解码后"+Arrays.toString(decode));
+        System.out.println("解码后字符串"+new String(decode));
     }
 }
 
