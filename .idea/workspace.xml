@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/henu/bst/BinarySortTreeDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/henu/bst/BinarySortTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/henu/bst/BinarySortTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/henu/bst/BinarySortTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/henu/bst/BinarySortTreeDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/henu/bst/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/henu/bst/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/henu/bst/BinarySortTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/henu/bst/BinarySortTreeDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +216,7 @@
       <workItem from="1578913320766" duration="7580000" />
       <workItem from="1578975817254" duration="992000" />
       <workItem from="1578977145247" duration="16033000" />
-      <workItem from="1578998530516" duration="5893000" />
+      <workItem from="1578998530516" duration="7195000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1578638430976</created>
@@ -327,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578990433163</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="更新二叉排序树增删查">
+      <created>1579006452461</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1579006452461</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,13 +360,18 @@
     <MESSAGE value="更新huffman编码" />
     <MESSAGE value="更新huffman解码" />
     <MESSAGE value="更新huffman文件压缩，解压" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新huffman文件压缩，解压" />
+    <MESSAGE value="更新二叉排序树增删查" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新二叉排序树增删查" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1039" y="214" key="#Auto_Import" timestamp="1578977274232">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1039" y="214" key="#Auto_Import/0.28.1920.1052@0.28.1920.1052" timestamp="1578977274232" />
+    <state x="1039" y="214" key="#Inspections" timestamp="1579006853472">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="1039" y="214" key="#Inspections/0.28.1920.1052@0.28.1920.1052" timestamp="1579006853472" />
     <state x="576" y="210" width="975" height="680" key="#Project_Structure" timestamp="1578830491807">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -377,30 +392,30 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1152" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.28.1920.1052@0.28.1920.1052" timestamp="1578823646635" />
-    <state x="289" y="43" key="CommitChangelistDialog2" timestamp="1578990433078">
+    <state x="323" y="28" key="CommitChangelistDialog2" timestamp="1579006452210">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="289" y="43" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578990433078" />
+    <state x="323" y="28" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1579006452210" />
     <state x="1008" y="392" key="FileChooserDialogImpl" timestamp="1578638159051">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1008" y="392" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1578638159051" />
-    <state width="908" height="421" key="GridCell.Tab.0.bottom" timestamp="1579006372586">
+    <state width="908" height="421" key="GridCell.Tab.0.bottom" timestamp="1579007691617">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="421" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579006372586" />
-    <state width="908" height="421" key="GridCell.Tab.0.center" timestamp="1579006372586">
+    <state width="908" height="421" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579007691617" />
+    <state width="908" height="421" key="GridCell.Tab.0.center" timestamp="1579007691615">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="421" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579006372586" />
-    <state width="908" height="421" key="GridCell.Tab.0.left" timestamp="1579006372586">
+    <state width="908" height="421" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579007691615" />
+    <state width="908" height="421" key="GridCell.Tab.0.left" timestamp="1579007691614">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="421" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579006372586" />
-    <state width="908" height="421" key="GridCell.Tab.0.right" timestamp="1579006372586">
+    <state width="908" height="421" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579007691614" />
+    <state width="908" height="421" key="GridCell.Tab.0.right" timestamp="1579007691616">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="421" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579006372586" />
+    <state width="908" height="421" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579007691616" />
     <state width="900" height="328" key="GridCell.Tab.1.bottom" timestamp="1578897176502">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -425,10 +440,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="387" y="89" width="1377" height="733" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1578917021422" />
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578990449560">
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1579006468031">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578990449560" />
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1579006468031" />
     <state x="343" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1578882907573">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
