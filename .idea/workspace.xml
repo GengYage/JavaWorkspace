@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/henu/tree/ArrBinaryTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/henu/tree/ArrBinaryTreeDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/henu/tree/HeapSort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/henu/tree/threadedBinarytree/BinaryTree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/henu/tree/threadedBinarytree/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/henu/tree/threadedBinarytree/ThreadedBinaryTreeDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/algorithm/henu/tree/顺序存储二叉树.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/henu/tree/ArrBinaryTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/henu/tree/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/henu/tree/threadedBinarytree/ThreadedBinaryTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/henu/tree/顺序存储二叉树.txt" afterDir="false" />
+    <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="更新至堆排序">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/henu/huffmanTree/HuffmanCode/HuffmanCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/henu/huffmanTree/HuffmanTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,22 +96,9 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager" selected="Application.HeapSort">
+  <component name="RunManager" selected="Application.HuffmanCode">
     <configuration name="ArrBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="henu.tree.ArrBinaryTreeDemo" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="henu.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.tree.BinaryTreeDemo" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -144,6 +123,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HuffmanCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="henu.huffmanTree.HuffmanCode.HuffmanCode" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="henu.huffmanTree.HuffmanCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HuffmanTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="henu.huffmanTree.HuffmanTree" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="henu.huffmanTree.HuffmanCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ThreadedBinaryTreeDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="henu.tree.threadedBinarytree.ThreadedBinaryTreeDemo" />
       <module name="algorithm" />
@@ -157,26 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadedBinaryTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.tree.ThreadedBinaryTreeDemo" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="henu.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HuffmanCode" />
+        <item itemvalue="Application.HuffmanTree" />
         <item itemvalue="Application.HeapSort" />
         <item itemvalue="Application.ThreadedBinaryTreeDemo (1)" />
         <item itemvalue="Application.ArrBinaryTreeDemo" />
-        <item itemvalue="Application.ThreadedBinaryTreeDemo" />
-        <item itemvalue="Application.BinaryTreeDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +212,9 @@
       <workItem from="1578882899363" duration="9828000" />
       <workItem from="1578905494233" duration="725000" />
       <workItem from="1578908838843" duration="749000" />
-      <workItem from="1578913320766" duration="3682000" />
+      <workItem from="1578913320766" duration="7580000" />
+      <workItem from="1578975817254" duration="992000" />
+      <workItem from="1578977145247" duration="8056000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1578638430976</created>
@@ -306,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578883940233</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="更新至堆排序">
+      <created>1578917290485</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578917290485</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,9 +326,14 @@
     <MESSAGE value="更新至二叉树" />
     <MESSAGE value="更新至二叉树查找" />
     <MESSAGE value="更新至二叉树节点删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新至二叉树节点删除" />
+    <MESSAGE value="更新至堆排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新至堆排序" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1039" y="214" key="#Auto_Import" timestamp="1578977274232">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="1039" y="214" key="#Auto_Import/0.28.1920.1052@0.28.1920.1052" timestamp="1578977274232" />
     <state x="576" y="210" width="975" height="680" key="#Project_Structure" timestamp="1578830491807">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -340,38 +346,38 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1039" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578725045275" />
-    <state x="1186" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1578892429235">
+    <state x="1186" y="231" width="734" height="565" key="#com.intellij.ide.util.MemberChooser" timestamp="1578977307609">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="1186" y="231" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1578892429235" />
+    <state x="1186" y="231" width="734" height="565" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052@0.28.1920.1052" timestamp="1578977307609" />
     <state x="1152" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578823646635">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1152" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.28.1920.1052@0.28.1920.1052" timestamp="1578823646635" />
-    <state x="289" y="43" key="CommitChangelistDialog2" timestamp="1578883940003">
+    <state x="289" y="43" key="CommitChangelistDialog2" timestamp="1578983531386">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="289" y="43" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578883940003" />
+    <state x="289" y="43" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1578983531386" />
     <state x="1008" y="392" key="FileChooserDialogImpl" timestamp="1578638159051">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1008" y="392" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1578638159051" />
-    <state width="908" height="345" key="GridCell.Tab.0.bottom" timestamp="1578917023750">
+    <state width="908" height="345" key="GridCell.Tab.0.bottom" timestamp="1578985202771">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="345" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1578917023750" />
-    <state width="908" height="345" key="GridCell.Tab.0.center" timestamp="1578917023749">
+    <state width="908" height="345" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1578985202771" />
+    <state width="908" height="345" key="GridCell.Tab.0.center" timestamp="1578985202771">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="345" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1578917023749" />
-    <state width="908" height="345" key="GridCell.Tab.0.left" timestamp="1578917023749">
+    <state width="908" height="345" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1578985202771" />
+    <state width="908" height="345" key="GridCell.Tab.0.left" timestamp="1578985202771">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="345" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1578917023749" />
-    <state width="908" height="345" key="GridCell.Tab.0.right" timestamp="1578917023749">
+    <state width="908" height="345" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1578985202771" />
+    <state width="908" height="345" key="GridCell.Tab.0.right" timestamp="1578985202771">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="345" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1578917023749" />
+    <state width="908" height="345" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1578985202771" />
     <state width="900" height="328" key="GridCell.Tab.1.bottom" timestamp="1578897176502">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -396,10 +402,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="387" y="89" width="1377" height="733" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1578917021422" />
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578883947663">
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578917299076">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578883947663" />
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1578917299076" />
     <state x="343" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1578882907573">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -416,10 +422,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="358" y="105" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.28.1920.1052@0.28.1920.1052" timestamp="1578883865593" />
-    <state x="1121" y="172" key="refactoring.ChangeSignatureDialog" timestamp="1578892447455">
+    <state x="1121" y="172" key="refactoring.ChangeSignatureDialog" timestamp="1578984880776">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="1121" y="172" key="refactoring.ChangeSignatureDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578892447455" />
+    <state x="1121" y="172" key="refactoring.ChangeSignatureDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578984880776" />
     <state x="1103" y="253" key="run.anything.popup" timestamp="1578646923695">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
