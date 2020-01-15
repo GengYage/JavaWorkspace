@@ -3,13 +3,6 @@ package practice;
 import java.util.Arrays;
 
 public class KMPAlgorithm {
-    public static void main(String[] args) {
-        String str1 = "BBC ABCDAB ABCDABCDABDE";
-        String str2 = "ABCDABD";
-        int[] next = KMPAlgorithm.kempNext(str2);
-        int i = KMPAlgorithm.kmpSearch(str1, str2, next);
-        System.out.println(i);
-    }
     //获取部分匹配值
     public static int[] kempNext(String dest) {
         int[] next = new int[dest.length()];
@@ -52,5 +45,18 @@ public class KMPAlgorithm {
             }
         }
         return -1;
+    }
+    //封装
+    public static int kmpSearch(String source, String target) {
+        if(source.length()<target.length()) {
+            return -1;
+        } else {
+            int[] kmpNext = KMPAlgorithm.kempNext(target);
+            return kmpSearch(source, target, kmpNext);
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(kmpSearch("ABC","BC"));
     }
 }
