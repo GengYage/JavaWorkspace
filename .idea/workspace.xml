@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="">
+    <list default="true" id="2b621bbc-18ff-4f5f-9b53-8abda10ec51f" name="Default Changelist" comment="KMP算法封装">
+      <change afterPath="$PROJECT_DIR$/out/production/algorithm/practice/GreedyAlgorithm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/GreedyAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/practice/KMPAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/practice/KMPAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/KMPAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/KMPAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
-  <component name="RunManager" selected="Application.KMPAlgorithm">
+  <component name="RunManager" selected="Application.GreedyAlgorithm">
     <configuration name="BinarySearchNoRecur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practice.BinarySearchNoRecur" />
       <module name="algorithm" />
@@ -118,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="henu.graph.Graph" />
+    <configuration name="GreedyAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.GreedyAlgorithm" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="henu.graph.*" />
+          <option name="PATTERN" value="practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GreedyAlgorithm" />
         <item itemvalue="Application.KMPAlgorithm" />
         <item itemvalue="Application.KnapsackProblem" />
         <item itemvalue="Application.TowerOfHanoi" />
         <item itemvalue="Application.BinarySearchNoRecur" />
-        <item itemvalue="Application.Graph" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +224,13 @@
       <workItem from="1578975817254" duration="992000" />
       <workItem from="1578977145247" duration="16033000" />
       <workItem from="1578998530516" duration="7844000" />
-      <workItem from="1579052824089" duration="26641000" />
+      <workItem from="1579052824089" duration="26773000" />
+      <workItem from="1579146724390" duration="1234000" />
+      <workItem from="1579328126494" duration="51000" />
+      <workItem from="1579329332038" duration="1309000" />
+      <workItem from="1579338736830" duration="598000" />
+      <workItem from="1579341013441" duration="36000" />
+      <workItem from="1579341067342" duration="2949000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1578638430976</created>
@@ -380,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579087245592</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="KMP算法封装">
+      <created>1579087551030</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1579087551030</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +422,8 @@
     <MESSAGE value="深度优先dfs，和广度优先bfs" />
     <MESSAGE value="汉诺塔" />
     <MESSAGE value="KMP算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="KMP算法" />
+    <MESSAGE value="KMP算法封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="KMP算法封装" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1039" y="214" key="#Auto_Import" timestamp="1578977274232">
@@ -440,46 +454,46 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1152" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.28.1920.1052@0.28.1920.1052" timestamp="1578823646635" />
-    <state x="648" y="59" key="CommitChangelistDialog2" timestamp="1579087245422">
+    <state x="648" y="59" width="1091" height="997" key="CommitChangelistDialog2" timestamp="1579343591526">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="648" y="59" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1579087245422" />
+    <state x="648" y="59" width="1091" height="997" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1579343591526" />
     <state x="1008" y="392" key="FileChooserDialogImpl" timestamp="1578638159051">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1008" y="392" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1578638159051" />
-    <state width="908" height="421" key="GridCell.Tab.0.bottom" timestamp="1579087512673">
+    <state width="908" height="421" key="GridCell.Tab.0.bottom" timestamp="1579343774381">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="421" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579087512673" />
-    <state width="908" height="421" key="GridCell.Tab.0.center" timestamp="1579087512672">
+    <state width="908" height="421" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579343774381" />
+    <state width="908" height="421" key="GridCell.Tab.0.center" timestamp="1579343774381">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="421" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579087512672" />
-    <state width="908" height="421" key="GridCell.Tab.0.left" timestamp="1579087512672">
+    <state width="908" height="421" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579343774381" />
+    <state width="908" height="421" key="GridCell.Tab.0.left" timestamp="1579343774381">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="421" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579087512672" />
-    <state width="908" height="421" key="GridCell.Tab.0.right" timestamp="1579087512672">
+    <state width="908" height="421" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579343774381" />
+    <state width="908" height="421" key="GridCell.Tab.0.right" timestamp="1579343774381">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="421" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579087512672" />
-    <state width="908" height="328" key="GridCell.Tab.1.bottom" timestamp="1579074489219">
+    <state width="908" height="421" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579343774381" />
+    <state width="908" height="328" key="GridCell.Tab.1.bottom" timestamp="1579087637814">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="328" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579074489219" />
-    <state width="908" height="328" key="GridCell.Tab.1.center" timestamp="1579074489219">
+    <state width="908" height="328" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1579087637814" />
+    <state width="908" height="328" key="GridCell.Tab.1.center" timestamp="1579087637812">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="328" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579074489219" />
-    <state width="908" height="328" key="GridCell.Tab.1.left" timestamp="1579074489219">
+    <state width="908" height="328" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1579087637812" />
+    <state width="908" height="328" key="GridCell.Tab.1.left" timestamp="1579087637811">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="328" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579074489219" />
-    <state width="908" height="328" key="GridCell.Tab.1.right" timestamp="1579074489219">
+    <state width="908" height="328" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1579087637811" />
+    <state width="908" height="328" key="GridCell.Tab.1.right" timestamp="1579087637813">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="908" height="328" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579074489219" />
+    <state width="908" height="328" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1579087637813" />
     <state width="378" height="563" key="HiddenNamespacesPopup" timestamp="1578745784882">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -488,10 +502,10 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="387" y="89" width="1377" height="733" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1579067265130" />
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1579078798042">
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2" timestamp="1579087569205">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1579078798042" />
+    <state x="990" y="289" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1579087569205" />
     <state x="343" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1578882907573">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -512,22 +526,22 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="994" y="174" width="853" height="906" key="find.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1579053282144" />
-    <state x="984" y="325" key="git4idea.merge.GitPullDialog" timestamp="1579066582866">
+    <state x="984" y="325" key="git4idea.merge.GitPullDialog" timestamp="1579087561155">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="984" y="325" key="git4idea.merge.GitPullDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1579066582866" />
+    <state x="984" y="325" key="git4idea.merge.GitPullDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1579087561155" />
     <state x="1121" y="172" key="refactoring.ChangeSignatureDialog" timestamp="1578984880776">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="1121" y="172" key="refactoring.ChangeSignatureDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1578984880776" />
-    <state x="1103" y="253" key="run.anything.popup" timestamp="1578985506574">
+    <state x="1103" y="253" key="run.anything.popup" timestamp="1579342667074">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="1103" y="253" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1578985506574" />
-    <state x="1052" y="260" width="774" height="678" key="search.everywhere.popup" timestamp="1579085514013">
+    <state x="1103" y="253" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1579342667074" />
+    <state x="1052" y="260" width="774" height="678" key="search.everywhere.popup" timestamp="1579341385792">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="1052" y="260" width="774" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1579085514013" />
+    <state x="1052" y="260" width="774" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1579341385792" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/algorithm$Graph.ic" NAME="Graph Coverage Results" MODIFIED="1579074488980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
